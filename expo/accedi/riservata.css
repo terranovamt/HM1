@@ -1,0 +1,243 @@
+header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logout {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  color: white;
+}
+div a .button {
+  color: rgb(115, 150, 0);
+  background-color: white;
+}
+
+/*------------------------------------------------------------------*/
+
+/*-------------------------------MAIN-------------------------------*/
+
+/*------------------------------------------------------------------*/
+.nomeazienda h1 {
+  font-size: 30px;
+  margin-left: calc(50% - 500px);
+  margin-right: calc(50% - 500px);
+}
+
+.info {
+  text-align: center;
+  padding: 4px 10px;
+  background: #dddddd50;
+  border-radius: 7px;
+  border: 3px solid rgb(115, 150, 0);
+  color: rgb(115, 150, 0);
+  margin: 50px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 140px;
+}
+
+.left {
+  width: 20%;
+  margin: 0px 50px;
+}
+.azioni {
+  padding: 20px;
+  font-size: 20px;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #e6e6e6;
+  position: fixed;
+  height: 110%;
+  overflow: auto;
+}
+
+.sidebar div {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidebar div.active {
+  background-color: rgb(115, 150, 0);
+  color: white;
+}
+
+.sidebar div:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+#content {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  max-width: 1120px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #eeeeee;
+  padding: 20px;
+  margin: 20px;
+  font-size: 1.3em;
+  border-radius: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+div h2 {
+  font-size: 25px;
+  margin: 0px;
+}
+.data {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+}
+.gg {
+  font-size: 1.5em;
+  margin-bottom: -5px;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: black solid 2px;
+}
+.box p {
+  text-align: left;
+  margin: 0px;
+}
+.choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 10px 5px;
+  margin: 10px 5px;
+  color: rgb(115, 150, 0);
+  background-color: white;
+  font-weight: lighter;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.elimina {
+  padding: 10px 5px;
+  margin: 10px 5px;
+  color: red;
+  background-color: white;
+  font-weight: lighter;
+  border-radius: 10px;
+  border: 1px solid red;
+  font-size: 18px;
+}
+
+.check,
+.btn:hover {
+  font-weight: lighter;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  background-color: rgba(115, 150, 0, 0.8);
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.elimina:hover {
+  font-weight: lighter;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  font-size: 18px;
+}
+
+.conf {
+  text-align: center;
+  color: white;
+  background-color: rgba(115, 150, 0, 1);
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 5px 20px 5px;
+}
+.nome_evento {
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  font-family: "Roboto Slab", serif;
+}
+.nome_evento:disabled {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  font-family: "Roboto Slab", serif;
+}
+form {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  width: 280px;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color:rgb(115, 150, 0);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}

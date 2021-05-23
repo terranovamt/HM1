@@ -1,0 +1,114 @@
+
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EXPO</title>
+    <link rel="shortcut icon" href="./img/logo.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Syne+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <!------------------------------------------------------------------>
+    <link rel="stylesheet" href="./home/home.css" />
+    <script src="./home/weather.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="menu">
+        <a class="button" href="./">Home</a>
+        <a class="button" href="./spazi">Spazi</a>
+        <a class="button" href="./eventi">Eventi</a>
+      </nav>
+
+      <div id="iconamenu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <h1>
+        <strong>EXPO </strong>
+        <a class="button" href="./accedi/login.php"> Prenota il tuo posto</a>
+      </h1>
+
+      <div>
+        
+        <a class="button" href="./accedi/login.php">Area Aziende</a>
+      </div>
+    </header>
+
+    <main>
+      <div id="intro">
+        <h1>EXPO organizza, ospita e gestisce eventi nei suoi padiglioni, guarda le nostre attività</h1>
+
+        <div class="container" id="weather">
+          <div class="app-title">
+            <p>Meteo</p>
+          </div>
+          <div class="notification"></div>
+          <div class="weather-container">
+            <div class="weather-icon">
+              <img src="icons/unknown.png" alt="" />
+            </div>
+            <div class="temperature-value">
+              <p>-°<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+              <p>-</p>
+            </div>
+            <div class="location">
+              <p>-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-img">
+        <img src="./img/spazi.jpeg" />
+        <div>
+          <h1>Spazi</h1>
+          <p>
+            Aree espositive e spazi per l’organizzazione di eventi di ogni tipo, al cui interno possono essere disegnate
+            soluzioni su misura. Versatilità nell'uso di spazi che permettono di poter creare esperienze dentro e fuori
+            i padiglioni.
+          </p>
+          <a class="button" href="./spazi">Scopri</a>
+        </div>
+      </div>
+
+      <div class="text-img" id="reverse">
+        <img src="./img/servizi.jpeg" />
+
+        <div>
+          <h1>Aziende</h1>
+          <p>Expo vanta tanti stand, svariate aziende prendono parte ad ogni evento.</p>
+          <a class="button" href="./work">Scopri</a>
+        </div>
+      </div>
+
+      <div class="text-img">
+        <img src="./img/eventi.jpeg" />
+        <div>
+          <h1>Eventi</h1>
+          <p>
+            Il centro espsotitivo vanta tante fiere, eventi, e congressi; offrendo a tutti una vetrina incomparabile e
+            un ponte verso il successo.
+          </p>
+          <a class="button" href="./eventi">Scopri</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div id="img"></div>
+        <div id="contatto">
+          <h1>Terranova Matteo</h1>
+          <p>O46002133</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
